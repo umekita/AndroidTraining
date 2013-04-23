@@ -8,9 +8,18 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <TextView
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="jp.mixi.practice.fragment.beg.MyFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_below="@+id/fragment1"
+        android:id="@+id/FragmentContainer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_centerInParent="true" >
+    </RelativeLayout>
 
 </RelativeLayout>
