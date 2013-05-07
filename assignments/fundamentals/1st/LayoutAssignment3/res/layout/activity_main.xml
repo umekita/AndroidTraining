@@ -26,6 +26,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:background="@drawable/frame"
+                android:contentDescription="@string/profile_img"
                 android:src="@drawable/ic_launcher" />
 
             <TextView
@@ -33,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/ImageView1"
                 android:layout_centerHorizontal="true"
-                android:text="プロフィール" />
+                android:text="@string/profile" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -50,36 +51,32 @@
                 android:layout_above="@+id/View1" >
 
                 <TextView
-                    android:textSize="20sp"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-                    android:text="Keith Yokoma" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:src="@android:drawable/ic_menu_manage" />
+                    android:drawableRight="@android:drawable/ic_menu_manage"
+                    android:text="@string/name"
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <View
                 android:id="@+id/View1"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginBottom="10dp"
                 android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp"
                 android:background="#393939" />
 
             <LinearLayout
-                android:layout_height="wrap_content"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_below="@+id/View1" >
 
                 <ImageButton
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:contentDescription="@string/call"
                     android:scaleType="fitXY"
                     android:src="@android:drawable/ic_menu_call" />
 
@@ -87,6 +84,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:contentDescription="@string/send"
                     android:scaleType="fitXY"
                     android:src="@android:drawable/ic_menu_send" />
 
@@ -94,6 +92,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:contentDescription="@string/share"
                     android:scaleType="fitXY"
                     android:src="@android:drawable/ic_menu_share" />
             </LinearLayout>
@@ -131,25 +130,20 @@
             android:layout_height="wrap_content"
             android:padding="10dp" >
 
-            <ImageView
-                android:id="@+id/ImageView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_launcher" />
-
             <TextView
+                android:id="@+id/menu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ImageView2"
                 android:layout_centerHorizontal="true"
-                android:text="メニュー" />
+                android:drawableTop="@drawable/ic_launcher"
+                android:text="@string/menu" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignRight="@+id/ImageView2"
+                android:layout_alignRight="@+id/menu"
                 android:background="@drawable/badge"
-                android:text="30" />
+                android:text="@string/number" />
         </RelativeLayout>
 
         <View
@@ -170,19 +164,13 @@
             android:layout_toRightOf="@+id/View3"
             android:paddingLeft="10dp" >
 
-            <ImageView
-                android:id="@+id/ImageView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:src="@drawable/ic_launcher" />
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_toRightOf="@+id/ImageView3"
-                android:text="つぶやきを投稿" />
+                android:drawableLeft="@drawable/ic_launcher"
+                android:gravity="center_vertical"
+                android:text="@string/submit" />
         </RelativeLayout>
 
         <View
@@ -203,18 +191,13 @@
             android:layout_alignTop="@+id/RelativeLayout5"
             android:padding="10dp" >
 
-            <ImageView
-                android:id="@+id/ImageView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_launcher" />
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ImageView4"
                 android:layout_centerHorizontal="true"
-                android:text="最近" />
+                android:drawableTop="@drawable/ic_launcher"
+                android:gravity="center_horizontal"
+                android:text="@string/recently" />
         </RelativeLayout>
     </RelativeLayout>
 
@@ -245,7 +228,7 @@
         android:layout_above="@+id/View5"
         android:background="@drawable/notify_button_state_list"
         android:padding="10dp"
-        android:text="30件のお知らせがあります！"
+        android:text="@string/notice"
         android:textColor="#ffffff" />
 
 </RelativeLayout>

@@ -4,5 +4,16 @@
     <string name="app_name">LayoutAssignment3</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="profile">プロフィール</string>
+    <string name="profile_img">profile</string>
+    <string name="name">Keith Yokoma</string>
+    <string name="call">call</string>
+    <string name="send">send</string>
+    <string name="share">share</string>
+    <string name="menu">メニュー</string>
+    <string name="number">30</string>
+    <string name="submit">つぶやきを投稿</string>
+    <string name="recently">最近</string>
+    <string name="notice">30件のお知らせがあります！</string>
 
 </resources>
